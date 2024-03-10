@@ -8,6 +8,7 @@ type Props = {
     url?: string;
     title: string;
     description: string;
+    technology: string;
     repository?: string;
   };
 
@@ -101,6 +102,9 @@ export const Header: React.FC<Props> = ({project, views}) => {
             </h1>
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               {project.description}
+            </p>
+            <p className="mt-6 text-lg leading-8 text-zinc-300">
+              Technology: {project.technology}
             </p>
           </div>
 
